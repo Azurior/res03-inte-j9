@@ -1,0 +1,30 @@
+.invi {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  #home {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(14, 66, 143, 0.7), rgba(37, 115, 234, 0.7), rgba(14, 66, 143, 0.7)), url("../../../assets/img/code.jpeg");
+  }
+  #home header {
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  #home header figure {
+    height: 10vh;
+    display: flex;
+    align-item: left;
+  }
+  #home header figure nav {
+    justify-content: center;
+    align-item: center;
+    width: 50vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
