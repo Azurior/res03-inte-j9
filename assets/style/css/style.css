@@ -4,6 +4,7 @@
 
 @media (min-width: 769px) {
   #home {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -13,17 +14,160 @@
     height: 10vh;
     background: rgba(0, 0, 0, 0.3);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   #home header figure {
-    height: 10vh;
-    display: flex;
+    display: grid;
+    width: 6vw;
+    height: 6vh;
+    justify-content: left;
     align-item: left;
   }
-  #home header figure nav {
+  #home header figure img {
+    width: 6vw;
+    height: 6vh;
+  }
+  #home header nav {
+    margin-top: 1rem;
+    height: 10vh;
     justify-content: center;
     align-item: center;
-    width: 50vw;
+    width: 80vw;
+  }
+  #home header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+  }
+  #home header nav ul li {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+  }
+  #home header nav ul li a {
+    text-decoration: none;
+  }
+  #home header nav ul li a:visited {
+    color: white;
+  }
+  #home header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  #home main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+  }
+  #home main section {
+    display: block;
+  }
+  #home main section h1 {
+    margin-top: 15rem;
+    margin-bottom: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 8rem;
+    color: white;
+  }
+  #home main section h2 {
+    margin-top: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 6.5rem;
+    color: #8ae7c3;
+  }
+  #home footer {
+    background-color: #010630;
+    color: white;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+  #home footer h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(14, 66, 143, 0.7), rgba(37, 115, 234, 0.7), rgba(14, 66, 143, 0.7)), url("https://res03.sites.3wa.io/assets/files/inte/j9/assets/img/code-portrait.jpg");
+  }
+  #home header {
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #home header figure {
+    margin: 0;
+    padding-top: 0;
+    justify-content: center;
+    align-item: center;
+    display: grid;
+    height: 3vh;
+  }
+  #home header figure img {
+    padding: 0;
+    width: 10vw;
+    height: 5vh;
+  }
+  #home header nav {
+    width: 100vw;
+  }
+  #home header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+  }
+  #home header nav ul li {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: white;
+  }
+  #home header nav ul li a {
+    text-decoration: none;
+  }
+  #home header nav ul li a:visited {
+    color: white;
+  }
+  #home header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  #home main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+  }
+  #home main section {
+    padding-left: 3rem;
+  }
+  #home main section h1 {
+    margin-top: 15rem;
+    margin-bottom: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 4rem;
+    color: white;
+  }
+  #home main section h2 {
+    margin-top: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3.5rem;
+    color: #8ae7c3;
+  }
+  #home footer {
+    background-color: #010630;
+    color: white;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+  #home footer h2 {
+    font-size: 1.1rem;
+    text-align: center;
   }
 }
 
